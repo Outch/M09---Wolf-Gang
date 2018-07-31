@@ -1,0 +1,221 @@
+@font-face {
+	font-family: "Bodega Sans";
+	src: url(../fonts/BodegaSans_Black.ttf);
+	font-weight: bold;
+	font-style: normal;
+}
+
+span {
+	color: #FF9D00;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #444444;
+	background-image: url("../img/bg_body.svg");
+	color: white;
+	font-family: arial;
+	margin: auto;
+	width: 80%;
+	line-height: 1.8;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+header {
+	margin-top: 30px;
+	text-align: center;
+	background: -moz-linear-gradient(150deg, white 0%, white 50%, #333333 50%, #333333 100%);
+	background: -webkit-linear-gradient(150deg, white 0%, white 50%, #333333 50%, #333333 100%);
+	background: linear-gradient(150deg, white 0%, white 50%, #333333 50%, #333333 100%);
+}
+
+header img {
+	margin: 30px 0px 40px 0px;
+}
+
+nav, h1, h2, h3 {	
+	font-family: "Bodega Sans";
+}
+
+nav a {
+	font-size: 2.5rem;
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: right;
+	margin: 10px 25px 30px 0px;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 5%
+}
+
+h2 span {
+	display: block;
+}
+
+footer a {
+	color: white;
+	margin: 0 30px;
+}
+
+article h3 {
+	font-size: 2.5rem;
+	color: #FF9D00;
+	text-align: center;
+	border-bottom: 3px solid #FF9D00;
+	margin-top: 0px;
+}
+
+#motos article {
+	width: 90%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: white;
+	color: #7D7D7D;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.cta {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #FF9D00;
+	width: 100%;
+	padding: 10px 0;
+}
+
+article img {
+	width: 100%;
+}
+
+#connaitre a {
+	color: white;
+	display: block;
+	margin: 30px 0;
+}
+
+video {
+	width: 100%;
+}
+
+footer {
+	background-color: rgba(255, 255, 255, 0.02);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+#licence {
+    color: #BEBDBF;
+    text-align: center;
+    padding: 25px;
+    display: block;
+}
+
+#licence img {
+    width: 50px;
+    margin: 0 auto;
+}
+
+#licence a {
+	margin: 0;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+	h2 span {
+		display: inline-block;
+	}
+	header {
+	background: -moz-linear-gradient(130deg, white 0%, white 50%, #333333 50%, #333333 100%);
+	background: -webkit-linear-gradient(130deg, white 0%, white 50%, #333333 50%, #333333 100%);
+	background: linear-gradient(130deg, white 0%, white 50%, #333333 50%, #333333 100%);
+	}
+	header img {
+		padding-left: 20px;
+		float: left;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	body {
+		width: 100%;
+		max-width: 1500px;
+	}
+	main {
+		margin: 0 auto;
+		width: 80%;
+	}
+	header {
+		margin-top: 0;
+	}
+	header img {
+		padding-top: 10px;
+		padding-left: 10%;
+	}
+	nav {
+		padding-right: 10%;
+	}
+
+	/*-------Test flex----------
+	
+	/*#flexman {
+		clear: both;
+		display: flex;
+		justify-content: space-between;
+	}
+	#flexman article {
+		width: 25%; 
+	}*/
+	#motos article {
+		width: 22%;
+		display: inline-block;
+		margin-right: 4%;
+	}
+	#motos article:last-child {
+		margin-right: 0;
+	}
+	#connaitre {
+		display: inline-block;
+		text-align: left;
+	}
+	#connaitre article {
+		width: 49%;
+		display: inline-block;
+	}
+	#connaitre a {
+		display: inline-block;
+		margin: 30px 30px;
+	}
+	#connaitre aside {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 20px;
+	}
+	footer {
+		margin-bottom: 0;
+	}
+}
